@@ -1,0 +1,12 @@
+{
+   "Name": "[CP] PNG",
+   "Author": "delloti",
+   "Version": "1.7.2",
+   "Description": "간편 리텍 모드. SDV 1.6.10 버전에서 사용 가능.",
+   "UniqueID": "delloti.PNG",
+   "MinimumApiVersion": "4.1.3",
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "2.3.0"
+   }
+}

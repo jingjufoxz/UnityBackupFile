@@ -1,0 +1,650 @@
+{
+	"Format": "2.3.0",
+	"ConfigSchema": {
+		"길바닥(Flooring) 아이콘": {
+			"AllowValues": "true, false",
+			"Default": true,
+		},
+	},
+    "Changes": [
+    	//Animals
+    	{
+    		"LogName": "Animals",
+    		"Action": "Load",
+			"Target": "Animals/BabyBlue Chicken, Animals/BabyBrown Chicken, Animals/BabyGolden Chicken, Animals/BabyVoid Chicken, Animals/BabyWhite Chicken, Animals/Blue Chicken, Animals/Brown Chicken, Animals/Golden Chicken, Animals/Void Chicken, Animals/White Chicken, Animals/BabyBrown Cow, Animals/BabyWhite Cow, Animals/Brown Cow, Animals/White Cow, Animals/BabyGoat, Animals/Goat, Animals/BabyOstrich, Animals/Ostrich, Animals/BabyPig, Animals/Pig, Animals/BabyRabbit, Animals/Rabbit, Animals/BabySheep, Animals/ShearedSheep, Animals/Sheep, Animals/cat, Animals/cat1, Animals/cat2, Animals/cat3, Animals/cat4, Animals/cat5, Animals/dog, Animals/dog1, Animals/dog2, Animals/dog3, Animals/dog4, Animals/dog5, Animals/turtle, Animals/turtle1, Animals/Dinosaur, Animals/Duck, Animals/horse, Animals/Error",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		//Buildings----------------------------------------------------------------
+		{
+    		"LogName": "Buildings",
+    		"Action": "Load",
+			"Target": "Buildings/Barn, Buildings/Big Barn, Buildings/Deluxe Barn, Buildings/Deluxe Barn_PaintMask, Buildings/Coop, Buildings/Big Coop, Buildings/Deluxe Coop, Buildings/Deluxe Coop_PaintMask, Buildings/Beach Cabin, Buildings/Beach Cabin_PaintMask, Buildings/Log Cabin, Buildings/Log Cabin_PaintMask, Buildings/Neighbor Cabin, Buildings/Neighbor Cabin_PaintMask, Buildings/Plank Cabin, Buildings/Plank Cabin_PaintMask, Buildings/Rustic Cabin, Buildings/Rustic Cabin_PaintMask, Buildings/Stone Cabin, Buildings/Stone Cabin_PaintMask, Buildings/Trailer Cabin, Buildings/Trailer Cabin_PaintMask, Buildings/Shed, Buildings/Big Shed, Buildings/Big Shed_PaintMask, Buildings/Earth Obelisk, Buildings/Water Obelisk, Buildings/Desert Obelisk, Buildings/Island Obelisk, Buildings/Pet Bowl, Buildings/Hay Pet Bowl, Buildings/Stone Pet Bowl, Buildings/houses, Buildings/houses_PaintMask, Buildings/Stable, Buildings/Stable_PaintMask, Buildings/Fish Pond, Buildings/Gold Clock, Buildings/Greenhouse, Buildings/Junimo Hut, Buildings/Mailbox, Buildings/Mill, Buildings/Shipping Bin, Buildings/Silo, Buildings/Slime Hutch, Buildings/Well, Buildings/Error",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//Buildings-seasonal
+		{
+    		"LogName": "Buildings-seasonal",
+    		"Action": "Load",
+			"Target": "Buildings/Barn, Buildings/Big Barn, Buildings/Deluxe Barn, Buildings/Deluxe Barn_PaintMask, Buildings/Coop, Buildings/Big Coop, Buildings/Deluxe Coop, Buildings/Deluxe Coop_PaintMask, Buildings/Beach Cabin, Buildings/Beach Cabin_PaintMask, Buildings/Log Cabin, Buildings/Log Cabin_PaintMask, Buildings/Neighbor Cabin, Buildings/Neighbor Cabin_PaintMask, Buildings/Plank Cabin, Buildings/Plank Cabin_PaintMask, Buildings/Rustic Cabin, Buildings/Rustic Cabin_PaintMask, Buildings/Stone Cabin, Buildings/Stone Cabin_PaintMask, Buildings/Trailer Cabin, Buildings/Trailer Cabin_PaintMask, Buildings/Shed, Buildings/Big Shed, Buildings/Big Shed_PaintMask, Buildings/Earth Obelisk, Buildings/Water Obelisk, Buildings/Desert Obelisk, Buildings/Island Obelisk, Buildings/Pet Bowl, Buildings/Hay Pet Bowl, Buildings/Stone Pet Bowl, Buildings/houses, Buildings/houses_PaintMask, Buildings/Stable, Buildings/Stable_PaintMask, Buildings/Fish Pond, Buildings/Gold Clock, Buildings/Greenhouse, Buildings/Junimo Hut, Buildings/Mailbox, Buildings/Mill, Buildings/Shipping Bin, Buildings/Silo, Buildings/Slime Hutch, Buildings/Well, Buildings/Error",
+			"FromFile": "assets/Buildings/seasonal/{{season}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/{{Target}}.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//Farmer----------------------------------------------------------------
+		{
+    		"LogName": "Farmer",
+    		"Action": "Load",
+			"Target": "Characters/Farmer/accessories, Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald, Characters/Farmer/farmer_base_mannequin, Characters/Farmer/farmer_base_mannequin_cursed, Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald, Characters/Farmer/farmer_girl_mannequin, Characters/Farmer/farmer_girl_mannequin_cursed, Characters/Farmer/hairstyles, Characters/Farmer/hairstyles2, Characters/Farmer/hats, haracters/Farmer/hats_animals, Characters/Farmer/pants, Characters/Farmer/shirts, Characters/Farmer/shoeColors, Characters/Farmer/skinColors",
+			"FromFile": "assets/Farmer/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+    	//LooseSprites----------------------------------------------------------------
+		{
+    		"LogName": "LooseSprites",
+    		"Action": "Load",
+			"Target": "LooseSprites/AquariumFish, LooseSprites/Bat, LooseSprites/Billboard, LooseSprites/birds, LooseSprites/boardGame, LooseSprites/boardGameBorder, LooseSprites/Book_Animation, LooseSprites/BundleSprites, LooseSprites/chatBox, LooseSprites/Cloudy_Ocean_BG, LooseSprites/Cloudy_Ocean_BG_Night, LooseSprites/Concessions, LooseSprites/ControllerMaps, LooseSprites/cowPhotos, LooseSprites/CraneGame, LooseSprites/CraneGame_international, LooseSprites/Cursors, LooseSprites/Cursors_1_6, LooseSprites/Cursors2, LooseSprites/daybg, LooseSprites/DesertRacers, LooseSprites/DialogBoxGreen, LooseSprites/dye_bench, LooseSprites/emojis, LooseSprites/EmoteMenu, LooseSprites/farm_ranching_icon, LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_fall, LooseSprites/Farm_ranching_map_summer, LooseSprites/Farm_ranching_map_winter, LooseSprites/Fence1, LooseSprites/Fence2, LooseSprites/Fence3, LooseSprites/Fence5, LooseSprites/FieldOfficeDonationMenu, LooseSprites/font_bold, LooseSprites/font_colored, LooseSprites/ForgeMenu, LooseSprites/GemBird, LooseSprites/Giftbox, LooseSprites/JojaCDForm, LooseSprites/JunimoNote, LooseSprites/LanguageButtons, LooseSprites/letterBG, LooseSprites/LightRays, LooseSprites/map, LooseSprites/map_fall, LooseSprites/map_island, LooseSprites/map_summer, LooseSprites/map_winter, LooseSprites/marnie_winter_dance, LooseSprites/Movies, LooseSprites/mute_voice_icon, LooseSprites/nightbg, LooseSprites/ParrotPlatform, LooseSprites/parrots, LooseSprites/PrizeTicketMenu, LooseSprites/raccoon_bundle_menu, LooseSprites/raccoon_circle_cutout, LooseSprites/SandDuggy, LooseSprites/SeaMonster, LooseSprites/shadow, LooseSprites/SpecialOrdersBoard, LooseSprites/squidFestLetterBG, LooseSprites/stardewPanorama, LooseSprites/steamAnimation, LooseSprites/SuspensionBridge, LooseSprites/swimShadow, LooseSprites/tailoring, LooseSprites/temporary_sprites_1, LooseSprites/terraria_cat, LooseSprites/textBox, LooseSprites/troutDerbyLetterBG, LooseSprites/WillysBoat, LooseSprites/winter_boatJourneyMap, LooseSprites/JunimoNoteMobile, LooseSprites/JunimoNoteMobile_raccoon, LooseSprites/MobileAtlas_manually_made, LooseSprites/MobileAtlas_tencent",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//LooseSprites-indoor
+		{
+    		"LogName": "LooseSprites-indoor",
+    		"Action": "EditImage",
+			"Target": "LooseSprites/AquariumFish, LooseSprites/Bat, LooseSprites/Billboard, LooseSprites/birds, LooseSprites/boardGame, LooseSprites/boardGameBorder, LooseSprites/Book_Animation, LooseSprites/BundleSprites, LooseSprites/chatBox, LooseSprites/Cloudy_Ocean_BG, LooseSprites/Cloudy_Ocean_BG_Night, LooseSprites/Concessions, LooseSprites/ControllerMaps, LooseSprites/cowPhotos, LooseSprites/CraneGame, LooseSprites/CraneGame_international, LooseSprites/Cursors, LooseSprites/Cursors_1_6, LooseSprites/Cursors2, LooseSprites/daybg, LooseSprites/DesertRacers, LooseSprites/DialogBoxGreen, LooseSprites/dye_bench, LooseSprites/emojis, LooseSprites/EmoteMenu, LooseSprites/farm_ranching_icon, LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_fall, LooseSprites/Farm_ranching_map_summer, LooseSprites/Farm_ranching_map_winter, LooseSprites/Fence1, LooseSprites/Fence2, LooseSprites/Fence3, LooseSprites/Fence5, LooseSprites/FieldOfficeDonationMenu, LooseSprites/font_bold, LooseSprites/font_colored, LooseSprites/ForgeMenu, LooseSprites/GemBird, LooseSprites/Giftbox, LooseSprites/JojaCDForm, LooseSprites/JunimoNote, LooseSprites/LanguageButtons, LooseSprites/letterBG, LooseSprites/LightRays, LooseSprites/map, LooseSprites/map_fall, LooseSprites/map_island, LooseSprites/map_summer, LooseSprites/map_winter, LooseSprites/marnie_winter_dance, LooseSprites/Movies, LooseSprites/mute_voice_icon, LooseSprites/nightbg, LooseSprites/ParrotPlatform, LooseSprites/parrots, LooseSprites/PrizeTicketMenu, LooseSprites/raccoon_bundle_menu, LooseSprites/raccoon_circle_cutout, LooseSprites/SandDuggy, LooseSprites/SeaMonster, LooseSprites/shadow, LooseSprites/SpecialOrdersBoard, LooseSprites/squidFestLetterBG, LooseSprites/stardewPanorama, LooseSprites/steamAnimation, LooseSprites/SuspensionBridge, LooseSprites/swimShadow, LooseSprites/tailoring, LooseSprites/temporary_sprites_1, LooseSprites/terraria_cat, LooseSprites/textBox, LooseSprites/troutDerbyLetterBG, LooseSprites/WillysBoat, LooseSprites/winter_boatJourneyMap, LooseSprites/JunimoNoteMobile, LooseSprites/JunimoNoteMobile_raccoon, LooseSprites/MobileAtlas_manually_made, LooseSprites/MobileAtlas_tencent",
+			"FromFile": "assets/LooseSprites/indoor/{{TargetWithoutPath}}.png",
+			"When": {
+				"IsOutdoors": false,
+				"HasFile:{{FromFile}}": true
+        	},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//LooseSprites-seasonal
+		{
+    		"LogName": "LooseSprites-seasonal",
+    		"Action": "Load",
+			"Target": "LooseSprites/AquariumFish, LooseSprites/Bat, LooseSprites/Billboard, LooseSprites/birds, LooseSprites/boardGame, LooseSprites/boardGameBorder, LooseSprites/Book_Animation, LooseSprites/BundleSprites, LooseSprites/chatBox, LooseSprites/Cloudy_Ocean_BG, LooseSprites/Cloudy_Ocean_BG_Night, LooseSprites/Concessions, LooseSprites/ControllerMaps, LooseSprites/cowPhotos, LooseSprites/CraneGame, LooseSprites/CraneGame_international, LooseSprites/Cursors, LooseSprites/Cursors_1_6, LooseSprites/Cursors2, LooseSprites/daybg, LooseSprites/DesertRacers, LooseSprites/DialogBoxGreen, LooseSprites/dye_bench, LooseSprites/emojis, LooseSprites/EmoteMenu, LooseSprites/farm_ranching_icon, LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_fall, LooseSprites/Farm_ranching_map_summer, LooseSprites/Farm_ranching_map_winter, LooseSprites/Fence1, LooseSprites/Fence2, LooseSprites/Fence3, LooseSprites/Fence5, LooseSprites/FieldOfficeDonationMenu, LooseSprites/font_bold, LooseSprites/font_colored, LooseSprites/ForgeMenu, LooseSprites/GemBird, LooseSprites/Giftbox, LooseSprites/JojaCDForm, LooseSprites/JunimoNote, LooseSprites/LanguageButtons, LooseSprites/letterBG, LooseSprites/LightRays, LooseSprites/map, LooseSprites/map_fall, LooseSprites/map_island, LooseSprites/map_summer, LooseSprites/map_winter, LooseSprites/marnie_winter_dance, LooseSprites/Movies, LooseSprites/mute_voice_icon, LooseSprites/nightbg, LooseSprites/ParrotPlatform, LooseSprites/parrots, LooseSprites/PrizeTicketMenu, LooseSprites/raccoon_bundle_menu, LooseSprites/raccoon_circle_cutout, LooseSprites/SandDuggy, LooseSprites/SeaMonster, LooseSprites/shadow, LooseSprites/SpecialOrdersBoard, LooseSprites/squidFestLetterBG, LooseSprites/stardewPanorama, LooseSprites/steamAnimation, LooseSprites/SuspensionBridge, LooseSprites/swimShadow, LooseSprites/tailoring, LooseSprites/temporary_sprites_1, LooseSprites/terraria_cat, LooseSprites/textBox, LooseSprites/troutDerbyLetterBG, LooseSprites/WillysBoat, LooseSprites/winter_boatJourneyMap, LooseSprites/JunimoNoteMobile, LooseSprites/JunimoNoteMobile_raccoon, LooseSprites/MobileAtlas_manually_made, LooseSprites/MobileAtlas_tencent",
+			"FromFile": "assets/LooseSprites/seasonal/{{season}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/{{Target}}.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//Maps----------------------------------------------------------------
+		{
+    		"LogName": "Maps",
+    		"Action": "Load",
+			"Target": "Maps/bathhouse_tiles, Maps/boatTunnelTiles, Maps/bugLandTiles, Maps/CarolineGreenhouseTiles, Maps/CarolineGreenhouseTiles_rainy, Maps/cave, Maps/characterSheet, Maps/coopTiles, Maps/DesertTiles, Maps/DesertTiles_Extended, Maps/ElliottHouseTiles, Maps/Farm Obelisk, Maps/farmhouse_tiles, Maps/floors_2, Maps/Island_FieldOffice_Tilesheet, Maps/Island_Hut_tilesheet, Maps/island_tilesheet_1, Maps/island_tilesheet_2, Maps/JojaRuins_TileSheet, Maps/LeoTreeHouse_Tilesheet, Maps/masteryCaveTilesheet, Maps/MenuTiles, Maps/MenuTilesUncolored, Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international, Maps/MovieTheaterScreen_TileSheet, Maps/paths, Maps/qiNutRoom_tilesheet, Maps/SewerTiles, Maps/springobjects, Maps/townInterior, Maps/townInterior_2, Maps/wallpapers_2, Maps/walls_and_floors, Maps/WitchHutTiles, Maps/witchSwampTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+    	//Maps-FestivalsTiles
+		{
+    		"LogName": "Maps-FestivalsTiles",
+    		"Action": "Load",
+			"Target": "Maps/desert_festival_tilesheet, Maps/desert_festival_tilesheet_text, Maps/desert_festival_tilesheet_text_international, Maps/Festivals, Maps/FishingDerbyTiles, Maps/FishingDerbyTiles_international, Maps/mermaid_house_tiles, Maps/night_market_tilesheet_objects, Maps/pirates_tilesheet, Maps/submarine_tilesheet",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+    	//Maps-NPCEventTiles
+		{
+    		"LogName": "Maps-NPCEventTiles",
+    		"Action": "Load",
+			"Target": "Maps/darkroom_tiles, Maps/ElliottSeaTiles, Maps/EmilyDreamscapeTiles, Maps/HarveyBalloonTiles, Maps/nightSceneMaru, Maps/nightSceneMaruTrees, Maps/samshowtiles, Maps/sebastianMountainTiles, Maps/sebastianRideTiles, Maps/stadium_tiles",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+    	//Maps-MinesTiles
+		{
+    		"LogName": "Maps-MinesTiles",
+    		"Action": "Load",
+			"Target": "Maps/Mines/mine, Maps/Mines/mine_dangerous, Maps/Mines/mine_dark, Maps/Mines/mine_dark_dangerous, Maps/Mines/mine_desert, Maps/Mines/mine_desert_dangerous, Maps/Mines/mine_desert_dark, Maps/Mines/mine_desert_dark_dangerous, Maps/Mines/mine_dino, Maps/Mines/mine_frost, Maps/Mines/mine_frost_dangerous, Maps/Mines/mine_frost_dark, Maps/Mines/mine_frost_dark_dangerous, Maps/Mines/mine_lava, Maps/Mines/mine_lava_dangerous, Maps/Mines/mine_lava_dark, Maps/Mines/mine_lava_dark_dangerous, Maps/Mines/mine_quarryshaft, Maps/Mines/mine_slime, Maps/Mines/mine_slime_dangerous, Maps/Mines/volcano_caldera, Maps/Mines/volcano_dungeon",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+    	//Maps-SeasonTiles
+		{
+    		"LogName": "Maps-SeasonTiles",
+    		"Action": "Load",
+			"Target": "Maps/spring_beach, Maps/summer_beach, Maps/fall_beach, Maps/winter_beach, Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1, Maps/winter_island_tilesheet_1, Maps/spring_monsterGraveTiles, Maps/summer_monsterGraveTiles, Maps/fall_monsterGraveTiles, Maps/winter_monsterGraveTiles, Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTileSheet, Maps/spring_outdoorsTileSheet2, Maps/summer_outdoorsTileSheet2, Maps/fall_outdoorsTileSheet2, Maps/winter_outdoorsTileSheet2, Maps/spring_outdoorTileSheet_extra, Maps/summer_outdoorTileSheet_extra, Maps/fall_outdoorTileSheet_extra, Maps/winter_outdoorTileSheet_extra, Maps/spring_Shadows, Maps/summer_Shadows, Maps/fall_Shadows, Maps/winter_Shadows, Maps/spring_town, Maps/summer_town, Maps/fall_town, Maps/winter_town, Maps/spring_Waterfalls, Maps/summer_Waterfalls, Maps/fall_Waterfalls, Maps/winter_Waterfalls",
+			"FromFile": "assets/Maps/SeasonTiles/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+    	//Minigames----------------------------------------------------------------
+		{
+    		"LogName": "Minigames",
+    		"Action": "Load",
+			"Target": "Minigames/Amuzio, Minigames/Clouds, Minigames/Darts, Minigames/fall_boatJourneyMap, Minigames/Intro, Minigames/jojacorps, Minigames/MaruComet, Minigames/MineCart, Minigames/spring_boatJourneyMap, Minigames/summer_boatJourneyMap, Minigames/TitleButtons, Minigames/treestrip, Minigames/winter_boatJourneyMap, Minigames/Xb1ProfileButton",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		//Monsters----------------------------------------------------------------
+		{
+    		"LogName": "Monsters",
+    		"Action": "Load",
+			"Target": "Characters/Monsters/Bat, Characters/Monsters/Bat_dangerous, Characters/Monsters/Frost Bat, Characters/Monsters/Frost Bat_dangerous, Characters/Monsters/Iridium Bat, Characters/Monsters/Lava Bat, Characters/Monsters/Armored Bug, Characters/Monsters/Armored Bug_dangerous, Characters/Monsters/Assassin Bug, Characters/Monsters/Bug, Characters/Monsters/Bug_dangerous, Characters/Monsters/Stick Bug, Characters/Monsters/Iridium Crab, Characters/Monsters/Lava Crab, Characters/Monsters/Lava Crab_dangerous, Characters/Monsters/Rock Crab, Characters/Monsters/Rock Crab_dangerous, Characters/Monsters/Truffle Crab, Characters/Monsters/Duggy, Characters/Monsters/Duggy_dangerous, Characters/Monsters/Magma Duggy, Characters/Monsters/Dust Spirit, Characters/Monsters/Dust Spirit_dangerous, Characters/Monsters/Dwarvish Sentry, Characters/Monsters/False Magma Cap, Characters/Monsters/Fly, Characters/Monsters/Fly_dangerous, Characters/Monsters/Carbon Ghost, Characters/Monsters/Ghost, Characters/Monsters/Putrid Ghost, Characters/Monsters/Iridium Golem, Characters/Monsters/Stone Golem, Characters/Monsters/Stone Golem_dangerous, Characters/Monsters/Wilderness Golem, Characters/Monsters/Grub, Characters/Monsters/Grub_dangerous, Characters/Monsters/Hot Head, Characters/Monsters/Lava Lurk, Characters/Monsters/Magma Sparker, Characters/Monsters/Magma Sprite, Characters/Monsters/Metal Head, Characters/Monsters/Metal Head_dangerous, Characters/Monsters/Mummy, Characters/Monsters/Mummy_dangerous, Characters/Monsters/Pepper Rex, Characters/Monsters/Serpent, Characters/Monsters/Royal Serpent, Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Girl, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Shaman_dangerous, Characters/Monsters/Shadow Sniper, Characters/Monsters/Skeleton Mage, Characters/Monsters/Skeleton Mage_dangerous, Characters/Monsters/Skeleton, Characters/Monsters/Skeleton_dangerous, Characters/Monsters/Haunted Skull, Characters/Monsters/Haunted Skull_dangerous, Characters/Monsters/Big Slime, Characters/Monsters/Green Slime, Characters/Monsters/Green Slime_dangerous, Characters/Monsters/Tiger Slime, Characters/Monsters/Spider, Characters/Monsters/Blue Squid, Characters/Monsters/Squid Kid, Characters/Monsters/Squid Kid_dangerous",
+			"FromFile": "assets/Monsters/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		//NPC----------------------------------------------------------------
+		{
+    		"LogName": "NPC-Portraits",
+    		"Action": "Load",
+			"Target": "Portraits/Abigail, Portraits/Abigail_Beach, Portraits/Abigail_Winter, Portraits/Alex, Portraits/Alex_Beach, Portraits/Alex_Winter, Portraits/AnsweringMachine, Portraits/Bear, Portraits/Birdie, Portraits/Bouncer, Portraits/Caroline, Portraits/Caroline_Beach, Portraits/Caroline_Winter, Portraits/Clint, Portraits/Clint_Beach, Portraits/Clint_Winter, Portraits/Demetrius, Portraits/Demetrius_Winter, Portraits/Dwarf, Portraits/Elliott, Portraits/Elliott_Beach, Portraits/Elliott_Winter, Portraits/Emily, Portraits/Emily_Beach, Portraits/Emily_Winter, Portraits/Evelyn, Portraits/Evelyn_Winter, Portraits/Fizz, Portraits/George, Portraits/George_Winter, Portraits/Gil, Portraits/Governor, Portraits/Grandpa, Portraits/Gunther, Portraits/Gus, Portraits/Gus_Winter, Portraits/Haley, Portraits/Haley_Beach, Portraits/Haley_Winter, Portraits/Harvey, Portraits/Harvey_Beach, Portraits/Harvey_Winter, Portraits/Henchman, Portraits/Jas, Portraits/Jas_Winter, Portraits/Jodi, Portraits/Jodi_Beach, Portraits/Jodi_Winter, Portraits/Kent, Portraits/Kent_Winter, Portraits/Krobus, Portraits/Krobus_Trenchcoat, Portraits/Leah, Portraits/Leah_Beach, Portraits/Leah_Winter, Portraits/Lewis, Portraits/Lewis_Winter, Portraits/Linus, Portraits/Linus_Winter, Portraits/Marlon, Portraits/Marnie, Portraits/Marnie_Beach, Portraits/Marnie_Winter, Portraits/Maru, Portraits/Maru_Beach, Portraits/Maru_Hospital, Portraits/Maru_Winter, Portraits/Morris, Portraits/MrQi, Portraits/Pam, Portraits/Pam_Beach, Portraits/Pam_Winter, Portraits/ParrotBoy, Portraits/ParrotBoy_Winter, Portraits/Penny, Portraits/Penny_Beach, Portraits/Penny_Winter, Portraits/Pierre, Portraits/Pierre_Beach, Portraits/Pierre_Winter, Portraits/Robin, Portraits/Robin_Beach, Portraits/Robin_Winter, Portraits/SafariGuy, Portraits/Sam, Portraits/Sam_Beach, Portraits/Sam_Winter, Portraits/Sandy, Portraits/Sebastian, Portraits/Sebastian_Beach, Portraits/Sebastian_Winter, Portraits/Shane, Portraits/Shane_Beach, Portraits/Shane_Winter, Portraits/Vincent, Portraits/Vincent_Winter, Portraits/Willy, Portraits/Willy_Winter, Portraits/Wizard, Portraits/Sam_JojaMart, Portraits/Shane_JojaMart",
+			"FromFile": "assets/NPC/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		{
+    		"LogName": "NPC-Characters",
+    		"Action": "Load",
+			"Target": "Characters/Abigail, Characters/Abigail_Beach, Characters/Abigail_Winter, Characters/Alex, Characters/Alex_Beach, Characters/Alex_Winter, Characters/Assorted_Fishermen, Characters/Assorted_Fishermen_Winter, Characters/Baby, Characters/Baby_dark, Characters/Bear, Characters/Birdie, Characters/Bouncer, Characters/Caroline, Characters/Caroline_Beach, Characters/Caroline_Winter, Characters/Clint, Characters/Clint_Beach, Characters/Clint_Winter, Characters/ClothesTherapyCharacters, Characters/Demetrius, Characters/Demetrius_Beach, Characters/Demetrius_Winter, Characters/Dwarf, Characters/Elliott, Characters/Elliott_Beach, Characters/Elliott_Winter, Characters/Emily, Characters/Emily_Beach, Characters/Emily_Winter, Characters/Evelyn, Characters/Evelyn_Winter, Characters/Fizz, Characters/George, Characters/George_Winter, Characters/Gourmand, Characters/Governor, Characters/Grandpa, Characters/Gunther, Characters/Gus, Characters/Gus_Winter, Characters/Haley, Characters/Haley_Beach, Characters/Haley_Winter, Characters/Harvey, Characters/Harvey_Beach, Characters/Harvey_Winter, Characters/Henchman, Characters/IslandParrot, Characters/Jas, Characters/Jas_Winter, Characters/Jodi, Characters/Jodi_Beach, Characters/Jodi_Winter, Characters/Junimo, Characters/Kent, Characters/Kent_Winter, Characters/Krobus, Characters/Krobus_Trenchcoat, Characters/KrobusRaven, Characters/Leah, Characters/Leah_Beach, Characters/Leah_Winter, Characters/LeahExFemale, Characters/LeahExMale, Characters/Lewis, Characters/Lewis_Beach, Characters/Lewis_Winter, Characters/Linus, Characters/Linus_Winter, Characters/Marcello, Characters/Mariner, Characters/Marlon, Characters/Marnie, Characters/Marnie_Beach, Characters/Marnie_Winter, Characters/Maru, Characters/Maru_Beach, Characters/Maru_Hospital, Characters/Maru_Winter, Characters/Morris, Characters/MrQi, Characters/mrs_raccoon, Characters/Pam, Characters/Pam_Beach, Characters/Pam_Winter, Characters/ParrotBoy, Characters/ParrotBoy_Winter, Characters/Penny, Characters/Penny_Beach, Characters/Penny_Winter, Characters/Pierre, Characters/Pierre_Beach, Characters/Pierre_Winter, Characters/raccoon, Characters/Robin, Characters/Robin_Beach, Characters/Robin_Winter, Characters/robot, Characters/SafariGuy, Characters/Sam, Characters/Sam_Beach, Characters/Sam_Winter, Characters/Sandy, Characters/SeaMonsterKrobus, Characters/Sebastian, Characters/Sebastian_Beach, Characters/Sebastian_Winter, Characters/Shane, Characters/Shane_Beach, Characters/Shane_JojaMart, Characters/Shane_Winter, Characters/Toddler, Characters/Toddler_dark, Characters/Toddler_girl, Characters/Toddler_girl_dark, Characters/TrashBear, Characters/Vincent, Characters/Vincent_Winter, Characters/Willy, Characters/Willy_Winter, Characters/Wizard, Characters/asldkfjsquaskutanfsldk, Characters/Crow, Characters/Sam_JojaMart",
+			"FromFile": "assets/NPC/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		//TerrainFeatures----------------------------------------------------------------
+		{
+    		"LogName": "TerrainFeatures",
+    		"Action": "Load",
+			"Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter, TerrainFeatures/grass, TerrainFeatures/hoeDirt, TerrainFeatures/hoeDirtDark, TerrainFeatures/hoeDirtSnow, TerrainFeatures/mushroom_tree, TerrainFeatures/mystic_tree, TerrainFeatures/tree_palm, TerrainFeatures/tree_palm2, TerrainFeatures/tree1_fall, TerrainFeatures/tree1_spring, TerrainFeatures/tree1_summer, TerrainFeatures/tree1_winter, TerrainFeatures/tree1_greenRain, TerrainFeatures/tree1_greenRain_fall, TerrainFeatures/tree1_greenRain_winter, TerrainFeatures/tree2_fall, TerrainFeatures/tree2_spring, TerrainFeatures/tree2_summer, TerrainFeatures/tree2_winter, TerrainFeatures/tree2_greenRain, TerrainFeatures/tree2_greenRain_fall, TerrainFeatures/tree2_greenRain_winter, TerrainFeatures/tree3_fall, TerrainFeatures/tree3_spring, TerrainFeatures/tree3_winter, TerrainFeatures/tree3_greenRain, TerrainFeatures/tree3_greenRain_fall, TerrainFeatures/tree3_greenRain_winter, TerrainFeatures/tree8_fall, TerrainFeatures/tree8_spring, TerrainFeatures/tree8_summer, TerrainFeatures/tree8_winter, TerrainFeatures/upperCavePlants",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//TerrainFeatures-indoor
+		{
+    		"LogName": "TerrainFeatures-indoor",
+    		"Action": "EditImage",
+			"Target": "TerrainFeatures/grass, TerrainFeatures/hoeDirt, TerrainFeatures/hoeDirtDark, TerrainFeatures/hoeDirtSnow, TerrainFeatures/mushroom_tree, TerrainFeatures/mystic_tree, TerrainFeatures/tree_palm, TerrainFeatures/tree_palm2, TerrainFeatures/tree1_fall, TerrainFeatures/tree1_spring, TerrainFeatures/tree1_summer, TerrainFeatures/tree1_winter, TerrainFeatures/tree1_greenRain, TerrainFeatures/tree1_greenRain_fall, TerrainFeatures/tree1_greenRain_winter, TerrainFeatures/tree2_fall, TerrainFeatures/tree2_spring, TerrainFeatures/tree2_summer, TerrainFeatures/tree2_winter, TerrainFeatures/tree2_greenRain, TerrainFeatures/tree2_greenRain_fall, TerrainFeatures/tree2_greenRain_winter, TerrainFeatures/tree3_fall, TerrainFeatures/tree3_spring, TerrainFeatures/tree3_winter, TerrainFeatures/tree3_greenRain, TerrainFeatures/tree3_greenRain_fall, TerrainFeatures/tree3_greenRain_winter, TerrainFeatures/tree8_fall, TerrainFeatures/tree8_spring, TerrainFeatures/tree8_summer, TerrainFeatures/tree8_winter, TerrainFeatures/upperCavePlants",
+			"FromFile": "assets/TerrainFeatures/indoor/{{TargetWithoutPath}}.png",
+			"When": {
+				"IsOutdoors": false,
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+    		"LogName": "TerrainFeatures-indoor(Flooring_winter O)",
+    		"Action": "EditImage",
+			"Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter",
+			"FromFile": "assets/TerrainFeatures/indoor/{{TargetWithoutPath}}.png",
+			"When": {
+				"IsOutdoors": false,
+				"HasFile:assets/TerrainFeatures/indoor/Flooring.png": true,
+				"HasFile:assets/TerrainFeatures/indoor/Flooring_winter.png": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+    		"LogName": "TerrainFeatures-indoor(Flooring_winter X)",
+    		"Action": "EditImage",
+			"Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter",
+			"FromFile": "assets/TerrainFeatures/indoor/Flooring.png",
+			"When": {
+				"IsOutdoors": false,
+				"HasFile:assets/TerrainFeatures/indoor/Flooring.png": true,
+				"HasFile:assets/TerrainFeatures/indoor/Flooring_winter.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//TerrainFeatures-seasonal
+		{
+    		"LogName": "TerrainFeatures-seasonal",
+    		"Action": "Load",
+			"Target": "TerrainFeatures/grass, TerrainFeatures/hoeDirt, TerrainFeatures/hoeDirtDark, TerrainFeatures/hoeDirtSnow, TerrainFeatures/mushroom_tree, TerrainFeatures/mystic_tree, TerrainFeatures/tree_palm, TerrainFeatures/tree_palm2, TerrainFeatures/tree1_fall, TerrainFeatures/tree1_spring, TerrainFeatures/tree1_summer, TerrainFeatures/tree1_winter, TerrainFeatures/tree1_greenRain, TerrainFeatures/tree1_greenRain_fall, TerrainFeatures/tree1_greenRain_winter, TerrainFeatures/tree2_fall, TerrainFeatures/tree2_spring, TerrainFeatures/tree2_summer, TerrainFeatures/tree2_winter, TerrainFeatures/tree2_greenRain, TerrainFeatures/tree2_greenRain_fall, TerrainFeatures/tree2_greenRain_winter, TerrainFeatures/tree3_fall, TerrainFeatures/tree3_spring, TerrainFeatures/tree3_winter, TerrainFeatures/tree3_greenRain, TerrainFeatures/tree3_greenRain_fall, TerrainFeatures/tree3_greenRain_winter, TerrainFeatures/tree8_fall, TerrainFeatures/tree8_spring, TerrainFeatures/tree8_summer, TerrainFeatures/tree8_winter, TerrainFeatures/upperCavePlants",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/{{Target}}.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+    		"LogName": "TerrainFeatures-seasonal(Flooring_winter O)",
+    		"Action": "Load",
+			"Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/{{Target}}.png": false,
+				"HasFile:assets/TerrainFeatures/seasonal/{{season}}/Flooring.png": true,
+				"HasFile:assets/TerrainFeatures/seasonal/{{season}}/Flooring_winter.png": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+    		"LogName": "TerrainFeatures-seasonal(Flooring_winter X)",
+    		"Action": "Load",
+			"Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"When": {
+				"HasFile:assets/{{Target}}.png": false,
+				"HasFile:assets/TerrainFeatures/seasonal/{{season}}/Flooring.png": true,
+				"HasFile:assets/TerrainFeatures/seasonal/{{season}}/Flooring_winter.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		//TileSheets----------------------------------------------------------------
+		{
+    		"LogName": "TileSheets",
+    		"Action": "Load",
+			"Target": "TileSheets/animations, TileSheets/bobbers, TileSheets/BuffsIcons, TileSheets/bushes, TileSheets/ChairTiles, TileSheets/companions, TileSheets/Craftables, TileSheets/critters, TileSheets/crops, TileSheets/emotes, TileSheets/fruitTrees, TileSheets/Objects_2, TileSheets/rain, TileSheets/SecretNotesImages, TileSheets/tools, TileSheets/weapons",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+    		"Action": "EditImage",
+			"Target": "TileSheets/furniture, TileSheets/furniture_2, TileSheets/furniture_2Front, TileSheets/furniture_3, TileSheets/furniture_3Front, TileSheets/furnitureFront, TileSheets/joja_furniture, TileSheets/joja_furnitureFront, TileSheets/junimo_furniture, TileSheets/junimo_furnitureFront, TileSheets/mannequin_furniture, TileSheets/Mannequins, TileSheets/retro_furniture, TileSheets/retro_furnitureFront, TileSheets/wizard_furniture, TileSheets/wizard_furnitureFront",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//TileSheets-indoor
+		{
+    		"LogName": "TileSheets-indoor",
+    		"Action": "EditImage",
+			"Target": "TileSheets/animations, TileSheets/bobbers, TileSheets/BuffsIcons, TileSheets/bushes, TileSheets/ChairTiles, TileSheets/companions, TileSheets/Craftables, TileSheets/critters, TileSheets/crops, TileSheets/emotes, TileSheets/fruitTrees, TileSheets/Objects_2, TileSheets/rain, TileSheets/SecretNotesImages, TileSheets/tools, TileSheets/weapons, TileSheets/furniture, TileSheets/furniture_2, TileSheets/furniture_2Front, TileSheets/furniture_3, TileSheets/furniture_3Front, TileSheets/furnitureFront, TileSheets/joja_furniture, TileSheets/joja_furnitureFront, TileSheets/junimo_furniture, TileSheets/junimo_furnitureFront, TileSheets/mannequin_furniture, TileSheets/Mannequins, TileSheets/retro_furniture, TileSheets/retro_furnitureFront, TileSheets/wizard_furniture, TileSheets/wizard_furnitureFront",
+			"FromFile": "assets/TileSheets/indoor/{{TargetWithoutPath}}.png",
+			"When": {
+				"IsOutdoors": false,
+				"HasFile:{{FromFile}}": true
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    	//TileSheets-seasonal
+		{
+    		"LogName": "TileSheets-seasonal",
+    		"Action": "Load",
+			"Target": "TileSheets/animations, TileSheets/bobbers, TileSheets/BuffsIcons, TileSheets/bushes, TileSheets/ChairTiles, TileSheets/companions, TileSheets/Craftables, TileSheets/critters, TileSheets/crops, TileSheets/emotes, TileSheets/fruitTrees, TileSheets/Objects_2, TileSheets/rain, TileSheets/SecretNotesImages, TileSheets/tools, TileSheets/weapon",
+			"FromFile": "assets/TileSheets/seasonal/{{season}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/{{Target}}.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{
+    		"LogName": "TileSheets-seasonal",
+    		"Action": "EditImage",
+			"Target": "TileSheets/furniture, TileSheets/furniture_2, TileSheets/furniture_2Front, TileSheets/furniture_3, TileSheets/furniture_3Front, TileSheets/furnitureFront, TileSheets/joja_furniture, TileSheets/joja_furnitureFront, TileSheets/junimo_furniture, TileSheets/junimo_furnitureFront, TileSheets/mannequin_furniture, TileSheets/Mannequins, TileSheets/retro_furniture, TileSheets/retro_furnitureFront, TileSheets/wizard_furniture, TileSheets/wizard_furnitureFront",
+			"FromFile": "assets/TileSheets/seasonal/{{season}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/{{Target}}.png": false
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+
+		//길바닥(Flooring) 아이콘--------------------------------------------------------------------------------------------------------------------------------
+
+		//TerrainFeatures
+
+		{//나무 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//돌 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 64, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//오래된 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 128, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 304, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//수정 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 192, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//짚 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 0, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//자갈 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 128, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//나무 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 64, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 368, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//수정 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 192, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//조약돌 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 0, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 48, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//디딤돌 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 64, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 112, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//벽돌 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 128, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//소박한 판자 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 192, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 560, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//돌길 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/Flooring.png",
+			"FromArea": { "X": 0, "Y": 192, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 560, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+
+    	//TerrainFeatures-seasonal----------------------------------------------------------------
+
+		{//나무 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//돌 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 64, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//오래된 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 128, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 304, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//수정 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 192, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 208, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//짚 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 0, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//자갈 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 128, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//나무 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 64, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 368, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//수정 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 192, "Y": 64, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//조약돌 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 0, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 48, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//디딤돌 길
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 64, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 112, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//벽돌 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 128, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//소박한 판자 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 192, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 560, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+		{//돌길 바닥
+    		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/TerrainFeatures/seasonal/{{season}}/Flooring.png",
+			"FromArea": { "X": 0, "Y": 192, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 560, "Width": 16, "Height": 16 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:assets/TerrainFeatures/Flooring.png": false,
+				"길바닥(Flooring) 아이콘": true,
+			},
+        	"Update": "OnLocationChange, OnTimeChange"
+		},
+    ]
+}

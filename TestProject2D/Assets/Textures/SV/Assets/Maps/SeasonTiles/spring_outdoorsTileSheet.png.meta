@@ -1,0 +1,609 @@
+fileFormatVersion: 2
+guid: 54b5ca4f199d5364092179b90bf57864
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 956440163399123246
+    second: spring_outdoorsTileSheet_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1168
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21425cd245f54d00800000000000000
+      internalID: 956440163399123246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7c80ca4dce73c43acdee7cd42c679e
+      internalID: 154099407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9754c4127e2087458d980e5d7e8f590
+      internalID: 1500547930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 672
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ed721dae326c34080ee3723b10a719
+      internalID: 566438419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fcdf54370e68f4d86991293e2afc10
+      internalID: 1432753040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 480
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0639bd07e053d1547803c6de0fec4c70
+      internalID: -1152150227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ef186a9139e58498f14fd93da83c94
+      internalID: -649845379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_7
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 512
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f20282d3a81c7043af84e09c5f33f1b
+      internalID: 1710422286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 672
+        width: 160
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -62, y: -86}
+        - {x: -60, y: -60}
+        - {x: -50, y: -60}
+        - {x: -44, y: -50}
+        - {x: -50, y: -61}
+        - {x: -51, y: -88}
+        - {x: 78, y: -88}
+        - {x: 80, y: -62}
+        - {x: 80, y: 7}
+        - {x: 60, y: 27}
+        - {x: 60, y: 44}
+        - {x: 59, y: 45}
+        - {x: 47, y: 45}
+        - {x: 46, y: 44}
+        - {x: 46, y: 41}
+        - {x: 25, y: 62}
+        - {x: 23, y: 62}
+        - {x: 17, y: 56}
+        - {x: 16, y: 56}
+        - {x: 16, y: 68}
+        - {x: 13, y: 71}
+        - {x: 12, y: 71}
+        - {x: 12, y: 83}
+        - {x: -54, y: 83}
+        - {x: -54, y: 88}
+        - {x: -57, y: 88}
+        - {x: -57, y: 83}
+        - {x: -58, y: 83}
+        - {x: -74, y: 67}
+        - {x: -74, y: 38}
+        - {x: -74, y: 21}
+        - {x: -75, y: 20}
+        - {x: -76, y: -87}
+        - {x: -64, y: -88}
+      - - {x: 59, y: 48}
+        - {x: 47, y: 48}
+        - {x: 36, y: 54}
+        - {x: 61, y: 53}
+        - {x: 61.28, y: 45.72}
+      physicsShape:
+      - - {x: -61.5, y: -85}
+        - {x: -61.5, y: -61}
+        - {x: -64.5, y: -58}
+        - {x: -66.5, y: -58}
+        - {x: -66.5, y: -57}
+        - {x: -59.5, y: -59}
+        - {x: -49.5, y: -60}
+        - {x: -43.5, y: -50}
+        - {x: -49.5, y: -61}
+        - {x: -49.5, y: -86}
+        - {x: -48.5, y: -88}
+        - {x: 78.5, y: -88}
+        - {x: 79.5, y: -77}
+        - {x: 79.5, y: 88}
+        - {x: -74.5, y: 88}
+        - {x: -77.5, y: 42}
+        - {x: -77.5, y: -88}
+        - {x: -63.5, y: -88}
+      - - {x: 59.5, y: 48}
+        - {x: 47.5, y: 48}
+        - {x: 36.5, y: 54}
+        - {x: 61.5, y: 53}
+        - {x: 61.78, y: 45.72}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426042621e6bbfa449a424a4246523ee
+      internalID: 655888547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5206e03b0f5facd4d838f2ebf97bde55
+      internalID: -130385777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_10
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922f16c50a54fef4ebac116dd962fcdc
+      internalID: 1776473950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576cfc2d6ab0bdb4bbd836561cf37952
+      internalID: -1847597743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba65fbdc054a254ebe5bdf0d771cc79
+      internalID: -1869650761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_13
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc6d99f1683c8145bab4187facb4fc6
+      internalID: -736035475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cba6ffa7aa7454b97fbd6115da72b4
+      internalID: 1684181563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf423a8a639d055498ff0d65f65e8783
+      internalID: 1401384739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_16
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109b78ff9f00a9849aa31cca7d07cd9e
+      internalID: 319481534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_outdoorsTileSheet_17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 848
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fcf8a9a089a5e4295deb1078a94bce
+      internalID: 1219390443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 43edb22eb1bad224ab23b6480e26202c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spring_outdoorsTileSheet_0: 956440163399123246
+      spring_outdoorsTileSheet_1: 154099407
+      spring_outdoorsTileSheet_10: 1776473950
+      spring_outdoorsTileSheet_11: -1847597743
+      spring_outdoorsTileSheet_12: -1869650761
+      spring_outdoorsTileSheet_13: -736035475
+      spring_outdoorsTileSheet_14: 1684181563
+      spring_outdoorsTileSheet_15: 1401384739
+      spring_outdoorsTileSheet_16: 319481534
+      spring_outdoorsTileSheet_17: 1219390443
+      spring_outdoorsTileSheet_2: 1500547930
+      spring_outdoorsTileSheet_3: 566438419
+      spring_outdoorsTileSheet_4: 1432753040
+      spring_outdoorsTileSheet_5: -1152150227
+      spring_outdoorsTileSheet_6: -649845379
+      spring_outdoorsTileSheet_7: 1710422286
+      spring_outdoorsTileSheet_8: 655888547
+      spring_outdoorsTileSheet_9: -130385777
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

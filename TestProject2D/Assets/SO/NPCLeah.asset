@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2e5c8a24a682b46a315e1eaeddd8c2, type: 3}
+  m_Name: NPCLeah
+  m_EditorClassIdentifier: 
+  npcName: "\uB808\uC544"
+  defaultportrait: {fileID: -1083303192, guid: 87279c80528571649b3085d5f610e6e7, type: 3}
+  dialogueLines:
+  - line: "\uB098\uBB34\uB97C \uCE5C\uAD6C\uB85C \uB450\uBA74 \uCC38 \uB2E8\uC21C\uD55C\uB370.
+      \uBCC4\uB85C \uB9D0\uC774 \uC5C6\uAC70\uB4E0.\n"
+    portrait: {fileID: -2104703672, guid: 87279c80528571649b3085d5f610e6e7, type: 3}
+  - line: "\uC548\uB155, {PlayerName}. \uC6B0\uB9AC \uB458 \uB2E4 \uB9C8\uC744\uC5D0\uC11C
+      \uC880 \uB5A8\uC5B4\uC838\uC11C \uC9C0\uB0B4\uB124. \uC774\uAC8C \uC5B4\uB5A4
+      \uC758\uBBF8\uAC00 \uC788\uB294 \uAC78\uAE4C?"
+    portrait: {fileID: 1926275764, guid: 87279c80528571649b3085d5f610e6e7, type: 3}
+  - line: "\uC624\uB298 \uC544\uCE68\uC5D0 \uC2E4\uC218\uB85C \uBC8C\uB808\uB97C
+      \uBC1F\uC558\uC5B4. \uAC00\uB054 \uB4DC\uB294 \uC0DD\uAC01\uC774, \uC790\uC5F0\uC744
+      \uC5B4\uB5A4 \uC2DD\uC73C\uB85C\uB4E0 \uD30C\uAD34\uD558\uC9C0 \uC54A\uACE0
+      \uC0AC\uB294 \uAC74 \uBD88\uAC00\uB2A5\uD55C \uAC83 \uAC19\uC544.\r\n"
+    portrait: {fileID: 1373751294, guid: 87279c80528571649b3085d5f610e6e7, type: 3}
+  npcPrefab: {fileID: 4980997961239816373, guid: bac04befd40ffef489286eae99db2c7a, type: 3}
